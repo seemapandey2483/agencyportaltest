@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+ <definition name="DefaultTemplate" template="/WEB-INF/views/template/layout.jsp">
+  <put-attribute name="title" value="IHubLogDashboard" />
+  <put-attribute name="header" value="/WEB-INF/views/template/header.jsp" />
+   <put-attribute name="menu" value="/WEB-INF/views/template/menu.jsp" />
+  <put-attribute name="body" value="" />
+  <put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp" />
+ </definition>
+ 
+ 
+ <definition name="login" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+ </definition>
+
+<definition name="agentinfo" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/agentinfo.jsp" />
+ </definition> 
+ <definition name="error" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/error.jsp" />
+ </definition> 
+ 
+ <definition name="admin" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/admin.jsp" />
+ </definition>
+ 
+ <definition name="listagents" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/listagents.jsp" />
+ </definition>
+ 
+ <definition name="report" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/report.jsp" />
+ </definition>
+ 
+<definition name="jobsDetail" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/jobsDetail.jsp" />
+ </definition>
+ <definition name="Deposit" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/Deposit.jsp" />
+ </definition>
+ <definition name="configJob" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/configJob.jsp" />
+ </definition>
+ 
+ <definition name="activitytransaction" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/activitytransaction.jsp" />
+ </definition>
+ 
+  <definition name="jobactivity" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/jobactivity.jsp" />
+ </definition>
+ 
+  <definition name="payment" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/payment.jsp" />
+ </definition>
+ 
+  <definition name="download" extends="DefaultTemplate">
+  <put-attribute name="body" value="/WEB-INF/views/download.jsp" />
+ </definition>
+ 
+</tiles-definitions>
